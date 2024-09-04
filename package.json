@@ -9,9 +9,17 @@
     "build": "bun build src/index.ts --outdir build",
     "build:run": "bun run build; bun build/index.js",
     "build:run:node": "bun run build;node build/index.js"
-  },  
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@eslint/js": "^9.9.1",
+    "@types/bun": "latest",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "3.3.3",
+    "typescript-eslint": "^8.4.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
