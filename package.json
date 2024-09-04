@@ -1,17 +1,16 @@
 {
   "name": "nodets",
-  "module": "src/index.ts",
-  "type": "module",
+	"main": "build/index.js",
+	"type": "module",
   "scripts": {
-    "run": "bun src/index.ts",
-    "run:watch": "bun --watch src/index.ts",
-    "run:hot": "bun --hot src/index.ts",
-    "build": "bun build src/index.ts --outdir build",
-    "build:run": "bun run build; bun build/index.js",
-    "build:run:node": "bun run build;node build/index.js"
+    "run": "tsx build/index.js",
+    "run:watch": "tsx watch src/index.ts",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "build:run": "node build/index.js"
   },  
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/node": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
